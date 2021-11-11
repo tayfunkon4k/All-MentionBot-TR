@@ -28,18 +28,18 @@ async def start(event):
   await event.reply("**Etiketleme Botu**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilir ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/UserEtigetBot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/Sohbetdestek'),
-                      Button.url('👮‍♂️ Sahibim', 'https://t.me/Mahoaga')]
+                      Button.url('📣 Support', 'https://t.me/UserTaggerOfficiall'),
+                      Button.url('👮‍♂️ Sahibim', 'https://t.me/SefillerSahibi')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Mention Tagger Bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyerek ve /bitir yazarak etiketleme işlemi biter. 🤗"
+  helptext = "**User Tagger Bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyerek ve /bitir yazarak etiketleme işlemi biter. 🤗"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/UserEtigetBot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/Sohbetdestek'),
+                       Button.url('📣 Support', 'https://t.me/UserTaggerOfficial'),
                       Button.url('👮‍♂️ Sahibim', 'https://t.me/Mahoaga')]
                     ),
                     link_preview=False
@@ -106,5 +106,5 @@ async def mentionall(event):
         usrtxt = ""
 
 
-print(">> Bot çalıyor merak etme 👮‍♂️ @SohbetDestek bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 👮‍♂️ @UserTaggerOfficial bilgi alabilirsin <<")
 client.run_until_disconnected()
